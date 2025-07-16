@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-alpine
 WORKDIR /app
 
 # Copy the jar file into the container
-COPY target/discovery-service.jar app.jar
+COPY target/discovery-service-0.0.1-SNAPSHOT.jar app.jar
 
 # Expose the port your discovery service runs on (e.g., 8761 for Eureka)
 EXPOSE 8761
